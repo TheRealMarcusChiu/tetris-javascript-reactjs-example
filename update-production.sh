@@ -1,5 +1,7 @@
 #! /bin/bash
 
+npm run build
+
 ##############
 # 0. GIT WAY #
 ##############

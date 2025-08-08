@@ -1,0 +1,126 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(1,61,114);
+}
+
+.canvas {
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: -7px;
+    margin-top: -1px;
+}
+
+.canvas-border {
+    border: 12px solid black;
+    margin-right: -10px;
+}
+
+.canvas-border-split {
+    border: 6px solid black;
+    margin-right: -10px;
+}
+
+.text {
+    background-color: #000;
+    font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+
+    /* Black outline using text-shadow */
+    text-shadow:
+        -2px -2px 0 #FFF,
+        2px -2px 0 #FFF,
+        -2px  2px 0 #FFF,
+        2px  2px 0 #FFF,
+        0px  2px 0 #FFF,
+        2px  0px 0 #FFF,
+        0px -2px 0 #FFF,
+        -2px  0px 0 #FFF;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Distributes items with space between them */
+    align-items: flex-start;
+}
+
+.flex-container-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+}
+
+.flex-container-score {
+    background-color: #000;
+    width: 428px;
+    display: flex;
+    justify-content: space-between; /* Distributes items with space between them */
+    align-items: center;
+}
+
+.score {
+    padding-left: 20px;
+    font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+
+    /* Black outline using text-shadow */
+    text-shadow:
+        -2px -2px 0 #FFF,
+        2px -2px 0 #FFF,
+        -2px  2px 0 #FFF,
+        2px  2px 0 #FFF,
+        0px  2px 0 #FFF,
+        2px  0px 0 #FFF,
+        0px -2px 0 #FFF,
+        -2px  0px 0 #FFF;
+}
+
+.score-value {
+    background-color: #000;
+    font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding-right: 20px;
+
+    /* Black outline using text-shadow */
+    text-shadow:
+        -2px -2px 0 #FFF,
+        2px -2px 0 #FFF,
+        -2px  2px 0 #FFF,
+        2px  2px 0 #FFF,
+        0px  2px 0 #FFF,
+        2px  0px 0 #FFF,
+        0px -2px 0 #FFF,
+        -2px  0px 0 #FFF;
+}
+
+.text-instructions {
+    background-color: rgb(24,23,22);
+    white-space: pre-line;
+    font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.text-instructions-small {
+    background-color: rgb(24,23,22);
+    white-space: pre-line;
+    font-family: 'Comic Sans MS', 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+}

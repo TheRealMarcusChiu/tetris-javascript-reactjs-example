@@ -5,6 +5,7 @@ import GlobalKeyListener from './components/GlobalKeyListener.jsx'
 
 const audio_koro = new Audio('/korobeiniki.ogg');
 audio_koro.volume = 0.10;
+audio_koro.loop = true;
 
 const audio_clear = new Audio('/clear.ogg');
 audio_clear.volume = 0.30;

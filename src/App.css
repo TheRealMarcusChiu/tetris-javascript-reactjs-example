@@ -117,6 +117,7 @@ body {
 }
 
 .text-instructions-small {
+    padding-top: 10px;
     background-color: rgb(24,23,22);
     white-space: pre-line;
     font-family: 'Comic Sans MS', 'Arial Black', sans-serif;

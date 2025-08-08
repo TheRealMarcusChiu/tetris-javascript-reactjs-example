@@ -4,14 +4,20 @@ import GlobalKeyListener from './components/GlobalKeyListener.jsx'
 
 
 const audio_koro = new Audio('/korobeiniki.ogg');
-audio_koro.loop = true;
+audio_koro.volume = 0.10;
 
 const audio_clear = new Audio('/clear.ogg');
+audio_clear.volume = 0.30;
 const audio_drop = new Audio('/drop.ogg');
+audio_drop.volume = 0.30;
 const audio_move = new Audio('/move.ogg');
+audio_move.volume = 0.30;
 const audio_rotate = new Audio('/rotate.ogg');
+audio_rotate.volume = 0.30;
 const audio_landing = new Audio('/landing.ogg');
+audio_landing.volume = 0.30;
 const audio_game_over = new Audio('/game-over.ogg');
+audio_game_over.volume = 0.30;
 
 
 const pieceMap = [
@@ -144,6 +150,7 @@ function gameOverHandler() {
     gameOver = true;
     audio_game_over.play();
     gameEngineStepCounter_Stop();
+    renderGameOver();
 }
 
 function stepCounter() {
@@ -721,8 +728,25 @@ function startGame() {
     rerender();
 }
 
+function renderGameOver() {
+    ctx.font = "40px 'Comic Sans MS'";
+    ctx.fillStyle = "white";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    const text = "GAME OVER\nClick to Play Again";
+    const lines = text.split('\n'); // Split the text by newline character
+    const x = width / 2; // X-coordinate for text
+    let y = height / 2 - 60; // Initial Y-coordinate for the first line
+    const lineHeight = 60; // Spacing between lines
+
+    for (let i = 0; i < lines.length; i++) {
+        ctx.fillText(lines[i], x, y + (i * lineHeight));
+    }
+}
+
 function renderInitial() {
-    ctx.font = "50px 'Comic Sans MS'";
+    ctx.font = "40px 'Comic Sans MS'";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
@@ -794,11 +818,8 @@ function App() {
                             <div>→ - right</div>
                             <div>↓ - down</div>
                             <div className="canvas-border-split"></div>
-                            <div>Refresh Page</div>
-                            <div>to</div>
-                            <div>Start New Game</div>
-                            <div className="text-instructions-small">omolord too lazy to prettify</div>
-                            <div className="text-instructions-small">a restart button</div>
+                            <div className="text-instructions-small">OMOLORD I NEED TO STOP</div>
+                            <div className="text-instructions-small"><a href="https://www.marcuschiu.com/tinkering/2025-08-07/">How I Coded This</a></div>
                         </div>
                     </div>
                     <div className="canvas-border">

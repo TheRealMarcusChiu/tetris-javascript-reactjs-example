@@ -727,7 +727,7 @@ function renderInitial() {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
 
-    ctx.fillText("Click to Play", width / 2, height / 2);
+    ctx.fillText("Click HERE to Play", width / 2, height / 2);
 }
 
 function App() {

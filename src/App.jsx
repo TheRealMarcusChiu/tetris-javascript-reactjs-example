@@ -722,6 +722,7 @@ function hardSet() {
 }
 
 function startGame() {
+    curPieceIndex_hold = null;
     canHold = true;
     gridState = Array.from({ length: 20 }, () => new Array(10).fill(0));
     curLevel = 0;

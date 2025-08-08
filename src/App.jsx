@@ -181,6 +181,10 @@ function updateScore(linesCleared) {
         default:
             // Code to execute if no case matches
     }
+    renderScore();
+}
+
+function renderScore() {
     scoreHtml.innerHTML = curScore;
 }
 
@@ -722,6 +726,7 @@ function startGame() {
     gridState = Array.from({ length: 20 }, () => new Array(10).fill(0));
     curLevel = 0;
     curScore = 0;
+    renderScore();
     gameOver = false;
     gameEngineStepCounter_Start(stepCounter);
     initializePieceSequence();

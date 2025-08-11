@@ -826,7 +826,10 @@ function App() {
                             <div>↓ - down</div>
                             <div className="canvas-border-split"></div>
                             <div className="text-instructions-small">OMOLORD I NEED TO STOP</div>
-                            <div className="text-instructions-small"><a href="https://www.marcuschiu.com/tinkering/2025-08-07/">How I Coded This</a></div>
+                            <div className="text-instructions-small"><a href="https://www.marcuschiu.com/tinkering/2025-08-07/">How it's Coded</a></div>
+                            <div className="versions">VERSIONS</div>
+                            <div className="text-instructions-med"><a href="https://tetris.marcuschiu.com">canvas</a></div>
+                            <div className="text-instructions-med"><a href="https://tetris-text.marcuschiu.com">text</a></div>
                         </div>
                     </div>
                     <div className="canvas-border">

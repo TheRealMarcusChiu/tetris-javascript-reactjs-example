@@ -125,3 +125,11 @@ body {
     font-size: 10px;
     color: white;
 }
+
+.versions {
+    padding-top: 10px;
+}
+
+.text-instructions-med {
+    font-size: 15px;
+}
